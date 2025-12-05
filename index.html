@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva Grupo Médico - Selecciona una opción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header con logo -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Eva Grupo Médico" class="logo">
+            </div>
+        </header>
+
+        <!-- Título principal -->
+        <div class="title-section">
+            <h1 class="main-title">Selecciona Una opción</h1>
+            <div class="arrow-container">
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <svg class="arrow arrow-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Grid de opciones -->
+        <div class="options-grid">
+            <!-- Opción 1: Cirugía Facial -->
+            <div class="option-card" data-option="facial">
+                <div class="card-inner">
+                    <div class="image-container">
+                        <img src="img/rostro.jpeg" alt="Cirugía Facial" class="option-image">
+                    </div>
+                    <div class="card-label">
+                        <span>CIRUGÍA FACIAL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opción 2: Cirugía Corporal -->
+            <div class="option-card" data-option="corporal">
+                <div class="card-inner">
+                    <div class="image-container">
+                        <img src="img/cuerpo.jpeg" alt="Cirugía Corporal" class="option-image">
+                    </div>
+                    <div class="card-label">
+                        <span>CIRUGÍA CORPORAL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opción 3: Cirugías -->
+            <div class="option-card" data-option="cirugias">
+                <div class="card-inner">
+                    <div class="image-container">
+                        <img src="img/mas_cirugias.jpeg" alt="Más Cirugías" class="option-image">
+                    </div>
+                    <div class="card-label">
+                        <span>CIRUGÍAS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opción 4: Pre-valoración -->
+            <div class="option-card" data-option="prevaloacion">
+                <div class="card-inner">
+                    <div class="image-container">
+                        <img src="img/pre-valoracion.jpeg" alt="Pre-valoración" class="option-image">
+                    </div>
+                    <div class="card-label">
+                        <span>PRE-VALORACIÓN</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opción 5: Antes y Después -->
+            <div class="option-card" data-option="antesdespues">
+                <div class="card-inner">
+                    <div class="image-container">
+                        <img src="img/antes-despues.jpeg" alt="Antes y Después" class="option-image">
+                    </div>
+                    <div class="card-label">
+                        <span>ANTES Y DESPUÉS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opción 6: Blog -->
+            <div class="option-card" data-option="blog">
+                <div class="card-inner">
+                    <div class="image-container">
+                        <img src="img/blog.jpeg" alt="Blog" class="option-image">
+                    </div>
+                    <div class="card-label">
+                        <span>BLOG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Cirugías Faciales -->
+    <div class="surgeries-section" id="facial-surgeries" style="display: none;">
+        <div class="surgeries-fixed-header">
+            <header class="header">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="Eva Grupo Médico" class="logo">
+                </div>
+            </header>
+
+            <div class="surgeries-header">
+                <button class="back-button" id="back-to-menu">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Volver
+                </button>
+                <h2 class="surgeries-title">Cirugías Faciales</h2>
+            </div>
+        </div>
+
+        <div class="surgeries-list">
+            <!-- Bichectomía -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="https://www.evacirugiacorporal.com/Imagenes/mejilla_bichectomia_eva_cirugia_plastica-1024x689.png" alt="Bichectomía">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Bichectomía</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La bichectomía es un procedimiento quirúrgico que consiste en la extracción de las bolas de Bichat, unas bolsas de grasa ubicadas en las mejillas. Este procedimiento ayuda a afinar el rostro y resaltar los pómulos, creando un aspecto más estilizado y definido.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La bichectomía es un procedimiento quirúrgico que consiste en la extracción de las bolas
+                                de Bichat, unas bolsas de grasa ubicadas en las mejillas. Este procedimiento ayuda a
+                                afinar el rostro y resaltar los pómulos, creando un aspecto más estilizado y definido.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cervicoplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="https://www.evacirugiacorporal.com/Imagenes/cuello_cervicoplastia_eva_cirugia_plastica.png" alt="Cervicoplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Cervicoplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La cervicoplastia es una cirugía estética del cuello que elimina el exceso de piel y grasa, mejorando el contorno y la apariencia del cuello. Es ideal para personas que desean rejuvenecer esta área y eliminar la papada o flacidez.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La cervicoplastia es una cirugía estética del cuello que elimina el exceso de piel y
+                                grasa, mejorando el contorno y la apariencia del cuello. Es ideal para personas que
+                                desean rejuvenecer esta área y eliminar la papada o flacidez.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estiramiento Tensor Medio Facial -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="https://www.evacirugiacorporal.com/Imagenes/tercio_medio_eva_cirugia_plastica.png" alt="Estiramiento Tensor Medio Facial">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Estiramiento Tensor Medio Facial</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="El estiramiento tensor medio facial es un procedimiento que rejuvenece la zona media del rostro, elevando las mejillas y reduciendo los surcos nasolabiales. Proporciona un aspecto más juvenil y descansado sin alterar las características naturales del rostro.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>El estiramiento tensor medio facial es un procedimiento que rejuvenece la zona media del
+                                rostro, elevando las mejillas y reduciendo los surcos nasolabiales. Proporciona un
+                                aspecto más juvenil y descansado sin alterar las características naturales del rostro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontoplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="https://www.evacirugiacorporal.com/Imagenes/frontoplastia_eva_cirugia_plastica.png" alt="Frontoplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Frontoplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La frontoplastia es una cirugía que suaviza las arrugas de la frente y eleva las cejas caídas. Este procedimiento rejuvenece la parte superior del rostro, proporcionando una expresión más fresca y juvenil.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La frontoplastia es una cirugía que suaviza las arrugas de la frente y eleva las cejas
+                                caídas. Este procedimiento rejuvenece la parte superior del rostro, proporcionando una
+                                expresión más fresca y juvenil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mentoplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="https://www.evacirugiacorporal.com/Imagenes/mentoplastia_eva_cirugia_plastica.png" alt="Mentoplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Mentoplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La mentoplastia es una cirugía que modifica el tamaño y forma del mentón mediante implantes o remodelación ósea. Mejora la armonía facial y el perfil, creando un equilibrio estético con el resto de las facciones.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La mentoplastia es una cirugía que modifica el tamaño y forma del mentón mediante
+                                implantes o remodelación ósea. Mejora la armonía facial y el perfil, creando un
+                                equilibrio estético con el resto de las facciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rinoplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="https://www.evacirugiacorporal.com/Imagenes/rinoplastia_eva_cirugia_plastica-1.png" alt="Rinoplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Rinoplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La rinoplastia es una cirugía que modifica la forma y tamaño de la nariz para mejorar la armonía facial. Puede corregir problemas estéticos y funcionales, como dificultades respiratorias, proporcionando resultados naturales y equilibrados.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La rinoplastia es una cirugía que modifica la forma y tamaño de la nariz para mejorar la
+                                armonía facial. Puede corregir problemas estéticos y funcionales, como dificultades
+                                respiratorias, proporcionando resultados naturales y equilibrados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Otoplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="https://www.evacirugiacorporal.com/Imagenes/otoplastia_eva_cirugia_plastica.png" alt="Otoplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Otoplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La otoplastia es una cirugía que corrige la forma, posición o tamaño de las orejas. Es especialmente útil para personas con orejas prominentes o asimétricas, mejorando la confianza y la armonía facial.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La otoplastia es una cirugía que corrige la forma, posición o tamaño de las orejas. Es
+                                especialmente útil para personas con orejas prominentes o asimétricas, mejorando la
+                                confianza y la armonía facial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Queiloplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="https://www.evacirugiacorporal.com/Imagenes/queiloplastia_eva_cirugia_plastica.png" alt="Queiloplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Queiloplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La queiloplastia es una cirugía que mejora la forma y volumen de los labios. Puede aumentar, reducir o remodelar los labios para lograr una apariencia más armoniosa y atractiva, respetando las proporciones faciales naturales.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La queiloplastia es una cirugía que mejora la forma y volumen de los labios. Puede
+                                aumentar, reducir o remodelar los labios para lograr una apariencia más armoniosa y
+                                atractiva, respetando las proporciones faciales naturales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blefaroplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="https://www.evacirugiacorporal.com/Imagenes/blefaroplastia_eva_cirugia_plastica.png" alt="Blefaroplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Blefaroplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La blefaroplastia es una cirugía de los párpados que elimina el exceso de piel y grasa alrededor de los ojos. Rejuvenece la mirada, reduce las bolsas y ojeras, y proporciona una apariencia más descansada y juvenil.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La blefaroplastia es una cirugía de los párpados que elimina el exceso de piel y grasa
+                                alrededor de los ojos. Rejuvenece la mirada, reduce las bolsas y ojeras, y proporciona
+                                una apariencia más descansada y juvenil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Cirugías Corporales -->
+    <div class="surgeries-section" id="corporal-surgeries" style="display: none;">
+        <div class="surgeries-fixed-header">
+            <header class="header">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="Eva Grupo Médico" class="logo">
+                </div>
+            </header>
+
+            <div class="surgeries-header">
+                <button class="back-button" id="back-to-menu-corporal">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Volver
+                </button>
+                <h2 class="surgeries-title">Cirugías Corporales</h2>
+            </div>
+        </div>
+
+        <div class="surgeries-list">
+            <!-- Brazioplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="img/brazioplastia.jpg" alt="Brazioplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Brazioplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La brazioplastia es una cirugía que elimina el exceso de piel y grasa de la parte superior de los brazos. Este procedimiento mejora el contorno de los brazos, eliminando la flacidez y proporcionando una apariencia más tonificada y juvenil.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La brazioplastia es una cirugía que elimina el exceso de piel y grasa de la parte superior de los brazos. Este procedimiento mejora el contorno de los brazos, eliminando la flacidez y proporcionando una apariencia más tonificada y juvenil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gluteoplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="img/gluteoplastia.jpg" alt="Gluteoplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Gluteoplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La gluteoplastia es una cirugía que mejora la forma y volumen de los glúteos mediante implantes o lipotransferencia. Este procedimiento realza la figura, proporcionando glúteos más firmes, redondeados y proporcionados.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La gluteoplastia es una cirugía que mejora la forma y volumen de los glúteos mediante implantes o lipotransferencia. Este procedimiento realza la figura, proporcionando glúteos más firmes, redondeados y proporcionados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lipoescultura -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="img/lipoescultura.jpg" alt="Lipoescultura">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Lipoescultura</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La lipoescultura es un procedimiento que elimina depósitos de grasa localizada y remodela el contorno corporal. A diferencia de la liposucción tradicional, también esculpe y define áreas específicas, creando una silueta más armoniosa y atlética.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La lipoescultura es un procedimiento que elimina depósitos de grasa localizada y remodela el contorno corporal. A diferencia de la liposucción tradicional, también esculpe y define áreas específicas, creando una silueta más armoniosa y atlética.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Abdominoplastia -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="img/abdominoplastia.jpg" alt="Abdominoplastia">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Abdominoplastia</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La abdominoplastia es una cirugía que elimina el exceso de piel y grasa del abdomen, y reafirma los músculos abdominales. Es ideal para personas que han experimentado cambios importantes de peso o embarazos, proporcionando un abdomen más plano y tonificado.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La abdominoplastia es una cirugía que elimina el exceso de piel y grasa del abdomen, y reafirma los músculos abdominales. Es ideal para personas que han experimentado cambios importantes de peso o embarazos, proporcionando un abdomen más plano y tonificado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mastoplastia de Reducción -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="img/mastoplastia-reduccion.jpg" alt="Mastoplastia de Reducción">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Mastoplastia de Reducción</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La mastoplastia de reducción es una cirugía que reduce el tamaño de los senos eliminando exceso de tejido mamario, grasa y piel. Alivia el dolor de espalda y cuello, mejora la postura y proporciona senos más proporcionados y cómodos.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La mastoplastia de reducción es una cirugía que reduce el tamaño de los senos eliminando exceso de tejido mamario, grasa y piel. Alivia el dolor de espalda y cuello, mejora la postura y proporciona senos más proporcionados y cómodos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aumento Glúteo Volumétrico -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="img/aumento-gluteo.jpg" alt="Aumento Glúteo Volumétrico">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Aumento Glúteo Volumétrico</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="El aumento glúteo volumétrico es un procedimiento que incrementa el tamaño y mejora la forma de los glúteos utilizando injertos de grasa propia del paciente. Proporciona resultados naturales, aumentando el volumen y mejorando la proyección y contorno de los glúteos.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>El aumento glúteo volumétrico es un procedimiento que incrementa el tamaño y mejora la forma de los glúteos utilizando injertos de grasa propia del paciente. Proporciona resultados naturales, aumentando el volumen y mejorando la proyección y contorno de los glúteos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Liposucción -->
+            <div class="surgery-item">
+                <div class="surgery-content">
+                    <div class="surgery-image">
+                        <img src="img/liposuccion.jpg" alt="Liposucción">
+                    </div>
+                    <div class="surgery-info">
+                        <div class="surgery-header-item">
+                            <h3>Liposucción</h3>
+                            <div class="surgery-actions">
+                                <button class="audio-btn"
+                                    data-text="La liposucción es un procedimiento quirúrgico que elimina depósitos de grasa localizada de áreas específicas del cuerpo. Es ideal para moldear el contorno corporal en zonas como abdomen, muslos, caderas y brazos, mejorando la silueta general.">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button class="accordion-toggle">
+                                    <svg class="chevron" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="surgery-description">
+                            <p>La liposucción es un procedimiento quirúrgico que elimina depósitos de grasa localizada de áreas específicas del cuerpo. Es ideal para moldear el contorno corporal en zonas como abdomen, muslos, caderas y brazos, mejorando la silueta general.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
